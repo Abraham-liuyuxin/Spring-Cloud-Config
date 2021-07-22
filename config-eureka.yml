@@ -1,11 +1,11 @@
 spring:
+  application:
+    name: eureka-server7001
   profiles:
     active: dev
 
 ---
 spring:
-  application:
-    name: eureka-server7001
   profiles: dev
 
 server:
