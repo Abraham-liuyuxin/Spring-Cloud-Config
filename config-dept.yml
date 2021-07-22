@@ -1,7 +1,8 @@
 spring:
   profiles:
     active: dev
-
+  application:
+    name: microservice-dept-8001
 ---
 server:
   port: 8001
@@ -14,8 +15,6 @@ mybatis:
 
 spring:
   profiles: dev
-  application:
-    name: microservice-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
@@ -50,8 +49,6 @@ mybatis:
 
 spring:
   profiles: test
-  application:
-    name: microservice-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver             # mysql驱动包
