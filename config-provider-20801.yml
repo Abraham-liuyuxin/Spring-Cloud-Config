@@ -2,7 +2,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: hand-provider-20801
+    name: hand-provider
 ---
 server:
   port: 20801
@@ -29,7 +29,7 @@ spring:
 
 eureka:
   instance:
-    instance-id: hand-provider
+    instance-id: hand-provider-20801
   client: #客户端注册进eureka服务列表内
     service-url:
       #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
@@ -64,7 +64,7 @@ spring:
 eureka:
   instance:
     #默认 instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-    instance-id: hand-provider
+    instance-id: hand-provider-20801
   client: #客户端注册进eureka服务列表内
     service-url:
       #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka,http://eureka7003.com:7003/eureka
