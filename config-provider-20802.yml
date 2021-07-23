@@ -5,7 +5,7 @@ spring:
     name: hand-provider-20802
 ---
 server:
-  port: 20801
+  port: 20802
 
 mybatis:
   #config-location: classpath:mybatis/mybatis.cfg.xml       # mybatis配置文件所在路径
@@ -39,7 +39,7 @@ eureka:
 
 ---
 server:
-  port: 20801
+  port: 20802
 
 mybatis:
   #config-location: classpath:mybatis/mybatis.cfg.xml       # mybatis配置文件所在路径
